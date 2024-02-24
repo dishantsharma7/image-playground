@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to ASCII Art Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image to ASCII Art Converter</h1>
+    </header>
+    <main>
+      <div class="upload-section">
+        <h2>Upload Image</h2>
+        <input type="file" id="uploadInput" accept="image/*" />
+      </div>
+      <div class="comparison-section">
+        <div class="comparison-container">
+          <div class="canvas-container">
+            <h2>Original Image</h2>
+            <canvas id="imageCanvas"></canvas>
+          </div>
+        </div>
+        <div class="comparison-container">
+          <div class="ascii-container">
+            <h2>ASCII Art</h2>
+            <pre id="asciiContainer"></pre>
+          </div>
+        </div>
+      </div>
+      <div class="download-section">
+        <button id="downloadButton" disabled>Download ASCII Art</button>
+        <div>
+          (Make sure to keep the notes app in fullscreen and set the font-size
+          to minimal for best results.)
+        </div>
+      </div>
+    </main>
+
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <p>&copy; 2024 Image to ASCII Art Converter</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
